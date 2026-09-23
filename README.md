@@ -120,6 +120,8 @@ If you use this code, please cite the paper:
 > theorem for multiple AI advisers. arXiv:2609.14438 (2026).
 > https://arxiv.org/abs/2609.14438
 
+Repository: https://github.com/Sasahara-Lab/mta0_code
+
 ## License
 
 MIT — see `LICENSE`.
