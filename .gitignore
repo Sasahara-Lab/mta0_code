@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+
+# generated outputs (reproducible from scripts); the paper's own figures and
+# the pinned simulation CSV are committed as reference copies
+figures/*
+!figures/fig2_abcd.png
+!figures/fig3_rates.png
+!figures/fig4_all.png
+!figures/figS1_phase.png
+!figures/figS2_nullmodel_illustration.png
+data/raw/*
+!data/raw/figS2_nullmodel.csv

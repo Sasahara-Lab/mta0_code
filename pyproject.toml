@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mta"
+version = "0.1.0"
+description = "Theory, simulation and figures for the multi-adviser paper (see README for the citation)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Kazutoshi Sasahara"},
+    {name = "Aoi Naito"},
+    {name = "Ryo Fujie"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2609.14438"
+
+[project.optional-dependencies]
+dev = ["pytest"]        # `pytest` runs tests/; the tests also run as a plain script
+
+[tool.setuptools]
+# Flat layout: the importable package `mta/` sits at the repository root.
+packages = ["mta", "mta.theory", "mta.simulation", "mta.viz"]
